@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Saatvik | Contact</title>
+    <!-- <script src="/functionality.js"></script> -->
+    
+
+    <!-- <script type="application/javascript">
+        var firebaseConfig = {
+            apiKey: "AIzaSyAteaBol50t40lwqz-xBIAVz7849J4UbiU",
+            authDomain: "test-c9b7f.firebaseapp.com",
+            databaseURL: "https://test-c9b7f-default-rtdb.firebaseio.com/",
+            projectId: "test-c9b7f",
+            storageBucket: "test-c9b7f.appspot.com",
+            messagingSenderId: "293906836320",
+            appId: "1:293906836320:web:9a2975d717556c50ec4c05"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script> -->
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="functionality.js"></script>
+   <!-- Header Section -->
+   <header>
+    <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/contact.html">Contact</a></li>   
+            </ul>
+    </nav>
+</header>
+
+<!-- ===================contact form======================= -->
+<main id="contact">
+    <section class="contact-row">
+        <div class="contact-left">
+            <h1 class="subt-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i> 0123456789</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="contact-right">
+            <div class="alert">Your message has been sent</div>
+            <form id="contactForm">
+                <input id="nameField" type="text" name="Name" placeholder="Your Name" required>
+                <input id="emailField" type="email" name="Email" placeholder="Your Email" required>
+                <Textarea id="msgField" name="Message" rows="6" placeholder="Your Message"></Textarea>
+                <button type="submit" class="submit_button">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+<!-- Footer Section -->
+   
+<footer class="copyright">
+    <p>Copyright &copy; Saatvik. Made with <i class="fa-solid fa-heart"></i> by Orchids International School</p>
+</footer>
+<!-- Javascript code in script tag -->
+<!-- <script>
+    // firebase 
+        const uname = document.querySelector(".nameField");
+        const email = document.querySelector(".emailField");
+        const msg = document.querySelector(".msgField");
+        //const btn = document.querySelector(".btn")
+
+        function senddata(){
+            const data = firebase.database().ref("data");
+            //console.log("button clicked");
+            data.child("user").set({
+                username:uname.value,
+                useremail:email.value,
+                usermsg:msg.value
+            });
+        }
+</script> -->
+</body>
+</html>
