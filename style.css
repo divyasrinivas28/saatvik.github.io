@@ -345,3 +345,97 @@ form .btn2{
    color: red;
 }
 
+/* responsivenesss */
+
+
+@media only screen and (max-width: 600px){
+   body{
+      background: #C4D5EC;
+      color: #00214C;
+  }
+   header{
+      padding: 3px 3%;
+      justify-content: space-between;
+      margin-top: 10%;
+   }
+
+   nav{
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+  }
+  .logo{
+      width: 60px;
+  }
+  
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 5px 5px;   
+  }
+  
+  nav ul li a{
+      color: #00214C;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+  }
+  
+  /* home section content */
+
+.main-header-col-1{
+   margin-top: 2%;
+   font-size: 30px;
+}
+
+.main-header-col-1 h1{
+   font-size: 20px;
+   margin-top: 20px;
+}
+
+.main-header-col-1 p{
+   font-size: 50px;
+   margin-top: 20px;
+}
+.main-header-row{
+   padding: 5px 5%;
+   display: flex;
+   justify-content: left;
+   flex-wrap: wrap;
+   margin-bottom: 80%;
+   margin-top: 50%;
+}
+
+.main-header-col-1{
+   flex-basis: 75%;
+   margin-right: 5%;
+}
+.main-header-col-2 img{
+   width: 100%;
+}
+.main-header-col-2{
+   margin-top: 3%;
+   flex-basis: 100%;
+   padding-left: 20%;
+}
+
+.btn{
+   display: inline-block;
+   margin: 30px;
+   width: 100px;
+   border: 1px solid #00214C;
+   padding: 3px;
+   margin-left: 5px;
+   margin-top: 15px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #00214C;
+   transition: background 0.5s;
+}
+.btn:hover{
+   background: #00214C;
+   color: #C4D5EC;
+}
+}
+
